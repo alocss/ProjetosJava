@@ -5,6 +5,9 @@ public class Main {
         Carro meuCarro = new Sandero();
 
         meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
 
         SerVivo meuSer = new Humano();
         meuSer.respirar();

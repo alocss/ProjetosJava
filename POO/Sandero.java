@@ -7,10 +7,14 @@ public class Sandero implements Carro {
 
     @Override // Sobrescrevendo o que vem da interface + implementação 
     public void acelerar(){
+        if (this.velocidadeAtual < this.limiteDeVelocidade){
+            this.velocidadeAtual += 50;
+            System.out.println("Acelerando");
+        } else {
+            System.out.println("Você atingiu o limite de velocidade");
+        }
         
-        this.velocidadeAtual += 10;
-        System.out.println("Acelerando");
-        System.out.println("Velocidade atual ");
+        System.out.println("Velocidade atual " + this.velocidadeAtual);
 
     }
 
